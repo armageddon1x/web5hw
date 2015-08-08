@@ -271,5 +271,69 @@ written in all types of ways to create many types
 of things happen.*/
 
 //*************************************************
+
+//Example Functions
+
+//this is a calculator function. a broken one
+function calculator(num1, num2){
+	var num3=num1+num2;
+	num3=num3*3;
+	console.log(num1 + "+" + num2 + "=" + num3);
+	console.log("wait a minute...");
+};
+
+//function call
+calculator(3,4);
+
+//states for stomach
+var full=true;
+var empty=false;
+
+//this is a way for a stomach to determine whether
+//it should receive food or not
+function hungry(stomach){
+	if (stomach===full){
+		console.log("I am full!");
+	}else{
+		console.log("I am hungry!!!!!");
+	};
+};
+
+//function calls
+hungry(full);
+hungry(empty);
+
+//days and times
+var week="weekday";
+
+var morning=6;
+var midday=12;
+var night=20;
+
+//this is an alarm to alert you whether you should
+//get up, depending on time and date
+function alarm(day, time){
+	if (day===week) {
+		if (time===morning) {
+		alert("it's morning, wake up!!!!");
+	}else if (time===midday){
+		alert("it's midday, you are really late!!!!!!!!!!")
+	}else if(time===night){
+		alert("it's nighttime, go to sleep...");
+	}else{
+		alert("ignore this alarm");
+	};
+	}else{
+		alert("don't bother, it's the weekend");
+	};
+};
+
+//function calls
+alarm("weekday",morning);
+alarm("weekday",midday);
+alarm("weekday",night);
+alarm("weekday",16);
+alarm("weekend",6)
+//*************************************************
 //The End
 //*************************************************
