@@ -115,7 +115,7 @@ console.log(box[0]); 		//this should give you "a"
 
 //Testing
 
-/*to test functions, we use the boolean operators 
+/*to test conditions, we use the boolean operators 
 (< for greater than,> for lesser than,== for 
 equivalence in value,=== to find equivalence in 
 data type and in value, != to find nonequivalence)*/
@@ -155,12 +155,12 @@ failure*/
 //Logic
 
 /*logic is the way we test for boolean conditions. 
-the boolean operators <,>,==,===, and != all check 
-if a certain condition is true or false. you can use 
-two at a time with the and (&&) or the or (||) 
-operator. to be true, both conditions of an && 
-comparison must be true, for an || 
-operation, only one needs to be true*/
+the boolean operators <,>,==,===,!=, and !==, all 
+check if a certain condition is true or false. you 
+can use two at a time with the and (&&) or the or 
+(||) operator. to be true, both conditions of an && 
+comparison must be true, for an || operation, only 
+one needs to be true*/
 
 var x=(5>3)&&(5<7);					//should be true
 // 5>3 is true and 5<7 is true
@@ -234,6 +234,8 @@ for (var i=0; i<3;i++) {
 	console.log("success!!!");
 };
 
+
+
 //*************************************************
 
 //Functions
@@ -245,4 +247,29 @@ function name(){
 	//other thing to be done;
 };
 
-/*functions have a name and take arguments to */
+
+/*functions have names and take arguments to execute 
+code and return a value*/
+
+function say_name(name){
+	console.log("my name is "+name);
+};
+
+say_name("generic");
+
+/*in this example, the argument given was a variable 
+called "name", which is used inside the function 
+to stand for the actual argument that can be given 
+once the function is called. the function is given 
+a name to be called for later use, and the code 
+inside the function outputs a string to the console 
+log. when the function is called, the argument, the 
+name "generic" in this case, passes through to the 
+variable, so the final output looks like "my name 
+is generic". that's a function! functions can be 
+written in all types of ways to create many types 
+of things happen.*/
+
+//*************************************************
+//The End
+//*************************************************
