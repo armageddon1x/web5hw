@@ -23,7 +23,7 @@ var x=20;
 
 //Alerts, Console, and Comments
 
-//alerts alert you to JS activity as a pop-up window
+//alerts alert you to JS activity via a pop-up window
 
 alert("hi");
 
@@ -63,27 +63,35 @@ var y="js";							//this is a string
 var z=true;							//this is a boolean
 var a=[1,2,3];					//this is an array
 
-var num=1+3;							
+var num=1+3;			
+
 /*numbers can be added, subtracted, multipled, and 
 divided. they can also be divided and give a 
 remainder with the modulus operator (%)*/
+
 console.log(num);
 
 var name="john";		
+
 /*strings are snippets of text.they are denoted by 
 quotation marks*/
+
 console.log(name);
 
-var bool=5>3;					
-/*returns true booleans are truth or false values. 
+var bool=5>3;				
+
+/*booleans are truth or false values. 
 they compare other variables and things to determine
 whether a condition is true or false. it can compare
 if something is greater than ">", less than "<" or
 equivalent to "==". there is also "===", which checks
 not only for equivalence in value but also in data 
-type(5=="5" would return true but 5==="5" would 
+type (5=="5" would return true but 5==="5" would 
 return false)*/
+
 console.log(bool);
+
+//this will return true
 
 //*************************************************
 
@@ -106,9 +114,11 @@ var hyperbox=[[1,3,5],[2,4,6],["x","y","z"]];
 console.log(box);
 console.log(strangebox);
 console.log(hyperbox);
+
 /*to access items in an array, you can call on its 
 index number. array indices start at 0, so the index
 number for "a" in the box would be 0*/
+
 console.log(box[0]); 		//this should give you "a"
 
 //*************************************************
@@ -125,6 +135,10 @@ console.log(4<3);
 console.log(10==10);
 console.log("10"===10);
 console.log(1!=3);
+
+/*there are also the less than or equal to "<=", 
+greater than or equal to ">=", and nonequivalence 
+in data type and value "!=="*/
 
 /*to use these, we can use if statements. if 
 statements check the condition given to see if 
@@ -182,9 +196,9 @@ console.log(a);
 console.log(b);
 console.log(c);
 
-/*another use of logic is to use if statments. an if 
-statement takes a condition and exectutes specific 
-code if the condition is true*/
+/*let's revisit the if statment. an if statement 
+akes a condition and exectutes specific code if 
+the condition is true*/
 
 if(5>1){
 	console.log("this is big success!");
@@ -234,6 +248,9 @@ for (var i=0; i<3;i++) {
 	console.log("success!!!");
 };
 
+//this will keep printing until i=2, since 2<3 but 
+//3!<3
+
 
 
 //*************************************************
@@ -282,8 +299,10 @@ function calculator(num1, num2){
 	console.log("wait a minute...");
 };
 
-//function call
+//function call 1
 calculator(3,4);
+
+//*************************************************
 
 //states for stomach
 var full=true;
@@ -299,9 +318,11 @@ function hungry(stomach){
 	};
 };
 
-//function calls
+//function call 2
 hungry(full);
 hungry(empty);
+
+//*************************************************
 
 //days and times
 var week="weekday";
@@ -328,12 +349,13 @@ function alarm(day, time){
 	};
 };
 
-//function calls
+//function call 3
 alarm("weekday",morning);
 alarm("weekday",midday);
 alarm("weekday",night);
 alarm("weekday",16);
 alarm("weekend",6)
+
 //*************************************************
 //The End
 //*************************************************
